@@ -15,3 +15,16 @@ export async function fetchBooks() {
     );
   }
 }
+
+export async function deleteBookById(id: number) {
+  try {
+    await fetch(`${API_URL}/${id}`, {
+      method: 'DELETE',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+    });
+  } catch (error) {
+    console.error(`Error deleting book with ID ${id}:`, error);
+  }
+}

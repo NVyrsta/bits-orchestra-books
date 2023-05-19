@@ -1,17 +1,6 @@
 {
   "books": [
     {
-      "id": 1,
-      "title": "titanic",
-      "author": "ervin",
-      "category": "Young Adult",
-      "isbn": 1111111111,
-      "createdAt": "Editt",
-      "editedAt": "Editt",
-      "status": true,
-      "imgSrc": "gdfg"
-    },
-    {
       "id": 2,
       "title": "222",
       "author": "2222",
@@ -35,7 +24,7 @@
     },
     {
       "id": 4,
-      "title": "The Politics Book",
+      "title": "44The Politics Book",
       "author": "Dorling Kindersley",
       "category": "Politics",
       "isbn": 9781409364450,
@@ -46,7 +35,7 @@
     },
     {
       "id": 5,
-      "title": "The Politics Book",
+      "title": "5The Politics Book",
       "author": "Dorling Kindersley",
       "category": "Politics",
       "isbn": 9781409364450,
@@ -57,7 +46,7 @@
     },
     {
       "id": 6,
-      "title": "The Politics Book",
+      "title": "6The Politics Book",
       "author": "Dorling Kindersley",
       "category": "Politics",
       "isbn": 9781409364450,

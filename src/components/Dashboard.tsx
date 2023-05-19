@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
-import { fetchBooks } from '../api/api';
+import { fetchBooks, deleteBookById } from '../api/api';
 import { Book } from '../types/Book';
 
 const Dashboard = () => {
@@ -11,6 +11,15 @@ const Dashboard = () => {
     setBooks(response);
     console.log(response);
   };
+
+  const onDeleteBook = async (id: number) => {
+    try {
+      await deleteBookById(id);
+      loadBooks();
+    } catch (error) {
+      console.error('Failed to delete book:', error);
+    }
+  }
 
   useEffect(() => {
     loadBooks();
@@ -120,6 +129,7 @@ const Dashboard = () => {
                       type="button"
                       className="table__buttons-delete table__button"
                       value="Delete"
+                      onClick={() => onDeleteBook(book.id)}
                     />
                   </div>
                 </td>
