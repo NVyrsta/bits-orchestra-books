@@ -1,4 +1,4 @@
-export default function formatDateTime (date: Date) {
+export default function (date: Date){
   const formattedDate = date.toLocaleDateString('en-US', {
     day: 'numeric',
     month: 'long',

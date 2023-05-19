@@ -1,48 +1,59 @@
 {
   "books": [
     {
-      "id": 0.27114388562234226,
+      "id": 0.3454353593491408,
       "status": true,
-      "title": "Check Your English Vocabulary for Computers and Information Technology",
-      "author": "Jon Marks",
-      "category": "Technology",
-      "ISBN": "9780713679",
-      "createdAt": "May 19, 2023, 6:58 PM",
-      "editedAt": "May 19, 2023, 7:43 PM",
-      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/d06/e4o10qrn5789oea277etrtgx54hhiygh/317_448_174b5ed2089e1946312e2a80dcd26f146/kniga_check_your_english_vocabulary_for_computers_and_information_technology.jpg"
-    },
-    {
-      "id": 0.4230131525770049,
-      "status": false,
       "title": "The Long Take",
-      "author": "Robin Robertson ",
-      "category": "Romance",
+      "author": "Robin Robertson",
+      "category": "Drama/Plays",
       "ISBN": "9781509886",
-      "createdAt": "May 19, 2023, 7:00 PM",
-      "editedAt": "May 19, 2023, 7:01 PM",
+      "createdAt": "May 20, 2023, 12:53 AM",
+      "editedAt": "May 20, 2023, 1:06 AM",
       "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/3eb/3idf5e4u31typ75d6hp44bk8qumzc2w2/296_448_174b5ed2089e1946312e2a80dcd26f146/kniga_the_long_take.jpg"
     },
     {
-      "id": 0.5948090752009283,
-      "status": true,
-      "title": "tret",
-      "author": "2sf",
-      "category": "Non-fiction",
-      "ISBN": "1111111111",
-      "createdAt": "May 19, 2023, 7:05 PM",
-      "editedAt": "May 19, 2023, 7:23 PM",
-      "imgSrc": "d"
+      "id": 0.8138181871832721,
+      "status": false,
+      "title": "JavaScript in Easy Steps",
+      "author": "Mike McGrath",
+      "category": "Technology",
+      "ISBN": "9781840785",
+      "createdAt": "May 20, 2023, 12:55 AM",
+      "editedAt": "May 20, 2023, 1:07 AM",
+      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/7b7/zmo5pybsps2g0e5uwv8w9062y1w5kvyn/336_410_174b5ed2089e1946312e2a80dcd26f146/kniga_javascript_in_easy_steps.jpg"
     },
     {
-      "id": 0.3478947456667436,
+      "id": 0.46203056785332786,
       "status": true,
-      "title": "dsf",
-      "author": "sdf",
-      "category": "Art/Photography",
-      "ISBN": "1111111111",
-      "createdAt": "May 19, 2023, 7:42 PM",
-      "editedAt": "May 19, 2023, 7:42 PM",
-      "imgSrc": "sdf"
+      "title": "Skills for the TOEFL iBT Test: Reading and Writing with Online Audio",
+      "author": "Collins",
+      "category": "Education",
+      "ISBN": "9780007460",
+      "createdAt": "May 20, 2023, 12:57 AM",
+      "editedAt": "May 20, 2023, 12:57 AM",
+      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/750/zrm7r6fvult3rhzl4a5dw6rgwj9lm7xt/298_386_174b5ed2089e1946312e2a80dcd26f146/kniga_skills_for_the_toefl_ibt_test_reading_and_writing_with_online_audio.jpg"
+    },
+    {
+      "id": 0.5704559887248422,
+      "status": false,
+      "title": "Becoming",
+      "author": " Michelle Obama",
+      "category": "Biography/Autobiography",
+      "ISBN": "9780241982",
+      "createdAt": "May 20, 2023, 12:58 AM",
+      "editedAt": "May 20, 2023, 1:07 AM",
+      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/e27/iu3ob7lgjs6gd253i4ooou2gcqtowudb/293_448_174b5ed2089e1946312e2a80dcd26f146/kniga_becoming.jpg"
+    },
+    {
+      "id": 0.4246785569948852,
+      "status": true,
+      "title": "The Book You Wish Your Parents Had Read (and Your Children Will Be Glad that You Did)",
+      "author": "Philippa Perry",
+      "category": "Cookbooks",
+      "ISBN": "9780241251",
+      "createdAt": "May 20, 2023, 1:03 AM",
+      "editedAt": "May 20, 2023, 1:03 AM",
+      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/11e/w2s0d86lxgalkqitkcwj6ro0sithtkrf/293_448_174b5ed2089e1946312e2a80dcd26f146/kniga_the_book_you_wish_your_parents_had_read_and_your_children_will_be_glad_that_you_did.jpg"
     }
   ]
 }

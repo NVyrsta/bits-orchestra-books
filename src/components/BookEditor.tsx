@@ -4,6 +4,7 @@ import { Book } from '../types/Book';
 import { useNavigate, useParams } from 'react-router-dom';
 import { fetchBookById, editBook } from '../api/api';
 import formatDateTime from '../utils/formatDateTime';
+import GoHomeLink from './GoHomeLink';
 
 const BookEditor = () => {
   const [book, setBook] = useState<Book>({
@@ -32,25 +33,26 @@ const BookEditor = () => {
   const onInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setBook({
       ...book,
-      [event.target.name]: event.target.value,
+      [event.target.name]: event.target.value
     });
   };
 
   const onInputSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setBook({
       ...book,
-      [event.target.name]: event.target.value,
+      [event.target.name]: event.target.value
     });
   };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (id) {
-    const updatedBook = {
-      ...book,
-      editedAt: formatDateTime(new Date())
-    };
-    editBook(id, updatedBook);    }
+      const updatedBook = {
+        ...book,
+        editedAt: formatDateTime(new Date())
+      };
+      editBook(id, updatedBook);
+    }
     navigate('/');
     console.log(book, 'book submited');
   };
@@ -62,7 +64,8 @@ const BookEditor = () => {
   }, []);
 
   return (
-    <section>
+    <section className="add-book">
+      <GoHomeLink />
       <form onSubmit={(e) => handleSubmit(e)} className="add-form">
         <div className="add-form__content">
           <div className="add-form__header">

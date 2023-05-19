@@ -1,14 +1,13 @@
+@import '../mixins/media.scss';
+
 .add-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
-  padding: 50px;
 
   & div {
   display: block;
-  width: 80vw;
 }
 }
 
@@ -16,7 +15,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80vw;
+      width: 100%;
+
+  
+  @include onTablet {
+    width: 80%;
+
+  }
 }
 
 .add-form__header {
@@ -65,5 +70,14 @@
 
 .add-form__submit:hover {
   background-color: #d32f2f;
+}
+
+.add-book {
+  width: 100%;
+  padding: 20px 20px;
+
+  @include onTablet {
+    padding: 20px 50px;
+  }
 }
 

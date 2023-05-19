@@ -3,6 +3,8 @@
 body {
   font-family: 'Liberation Mono', 'Courier New', monospace;
   background-color: $light;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 #root {
@@ -22,4 +24,14 @@ body {
 
 .container {
   width: 100%;
+}
+
+.go-home-link {
+  font-size: 32px;
+  color: $green;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: $primary-light;
+  }
 }

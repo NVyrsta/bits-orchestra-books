@@ -44,5 +44,11 @@
     padding: 4px 16px;
     font-size: 18px;
     border-radius: 0 20px 20px 20px;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $primary-light;
+      border-color: $primary-light;
+    }
   }
 }

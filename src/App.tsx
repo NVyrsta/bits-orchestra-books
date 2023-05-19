@@ -12,6 +12,9 @@ import Footer from './components/Footer';
 import BookEditor from './components/BookEditor';
 import PageNotFound from './components/PageNotFound';
 
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function App() {
   return (
     <Router>
@@ -26,6 +29,7 @@ function App() {
       </Routes>
 
       <Footer />
+      <ToastContainer />
     </Router>
   );
 }

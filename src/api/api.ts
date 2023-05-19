@@ -1,4 +1,5 @@
 import { Book } from '../types/Book';
+import Notification from '../components/Notification';
 
 const API_URL = 'http://localhost:3001/books';
 
@@ -9,10 +10,7 @@ export async function fetchBooks() {
 
     return data;
   } catch (error) {
-    console.error(
-      'An unexpected error occurred in fetchBooks fetch request:',
-      error
-    );
+    Notification('Error fetch all books', 'reject');
   }
 }
 
@@ -23,10 +21,7 @@ export async function fetchBookById(id: number) {
 
     return data;
   } catch (error) {
-    console.error(
-      'An unexpected error occurred in fetchBooks fetch request:',
-      error
-    );
+    Notification('Error fetching book by id', 'reject');
   }
 }
 
@@ -36,10 +31,11 @@ export async function deleteBookById(id: number) {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
-      },
+      }
     });
+    Notification('Book deleted successfully', 'success');
   } catch (error) {
-    console.error(`Error deleting book with ID ${id}:`, error);
+    Notification("Can't delete book", 'reject');
   }
 }
 
@@ -53,9 +49,11 @@ export async function addBook(bookData: Book) {
       body: JSON.stringify(bookData)
     });
     const newBook = await response.json();
+    Notification('Book added successfully', 'success');
+
     return newBook;
   } catch (error) {
-    console.error('Error creating book:', error);
+    Notification("Can't add book", 'reject');
   }
 }
 
@@ -69,10 +67,9 @@ export async function editBook(id: string, bookData: Book) {
       body: JSON.stringify(bookData)
     });
     const updatedBook = await response.json();
-    console.log('patch');
+    Notification('Book updated successfully', 'success');
     return updatedBook;
   } catch (error) {
-    console.error('Error editing book:', error);
-    throw error;
+    Notification('Error updating book', 'reject');
   }
 }

@@ -4,6 +4,7 @@ import { Book } from '../types/Book';
 import { useNavigate } from 'react-router-dom';
 import { addBook } from '../api/api';
 import formatDateTime from '../utils/formatDateTime';
+import GoHomeLink from './GoHomeLink';
 
 const AddBook = () => {
   const [book, setBook] = useState<Book>({
@@ -18,12 +19,12 @@ const AddBook = () => {
     imgSrc: ''
   });
   const navigate = useNavigate();
- 
+
   const onInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setBook({
       ...book,
-      [event.target.name]: event.target.value,
-    })
+      [event.target.name]: event.target.value
+    });
   };
 
   const onInputSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
@@ -35,12 +36,14 @@ const AddBook = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    navigate('/'); console.log(book, 'book submited');
+    navigate('/');
+    console.log(book, 'book submited');
     addBook(book);
   };
 
   return (
-    <section >
+    <section className="add-book">
+      <GoHomeLink />
       <form onSubmit={(e) => handleSubmit(e)} className="add-form">
         <div className="add-form__content">
           <div className="add-form__header">
