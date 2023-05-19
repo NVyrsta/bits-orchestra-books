@@ -1,114 +1,26 @@
 {
   "books": [
     {
-      "id": 2,
-      "title": "222",
-      "author": "2222",
-      "category": "Art/Photography",
-      "isbn": 2222222222,
-      "createdAt": "Editt",
-      "editedAt": "Editt",
+      "id": 0.3388641189231141,
       "status": true,
-      "imgSrc": "https://.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg"
-    },
-    {
-      "id": 3,
-      "title": "The Politics Book",
-      "author": "Dorling Kindersley",
-      "category": "Politics",
-      "isbn": 9781409364450,
-      "createdAt": "12 March 2022, 8:35AM",
-      "editedAt": "13 March 2022, 1:48PM",
-      "status": true,
-      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg"
-    },
-    {
-      "id": 4,
-      "title": "44The Politics Book",
-      "author": "Dorling Kindersley",
-      "category": "Politics",
-      "isbn": 9781409364450,
-      "createdAt": "12 March 2022, 8:35AM",
-      "editedAt": "13 March 2022, 1:48PM",
-      "status": true,
-      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg"
-    },
-    {
-      "id": 5,
-      "title": "5The Politics Book",
-      "author": "Dorling Kindersley",
-      "category": "Politics",
-      "isbn": 9781409364450,
-      "createdAt": "12 March 2022, 8:35AM",
-      "editedAt": "13 March 2022, 1:48PM",
-      "status": true,
-      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg"
-    },
-    {
-      "id": 6,
-      "title": "6The Politics Book",
-      "author": "Dorling Kindersley",
-      "category": "Politics",
-      "isbn": 9781409364450,
-      "createdAt": "12 March 2022, 8:35AM",
-      "editedAt": "13 March 2022, 1:48PM",
-      "status": true,
-      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg"
-    },
-    {
-      "id": 7,
-      "title": "mailo",
-      "author": "js author",
-      "category": "Sports",
-      "isbn": 1010101010,
-      "createdAt": "12 March 2022, 8:35AM",
-      "editedAt": "13 March 2022, 1:48PM",
-      "status": true,
-      "imgSrc": "https://images.prom.ua/2440373205_w640_h640_javascript-the-definitive.jpg"
-    },
-    {
-      "id": 8,
-      "title": "riko",
-      "author": "riko",
-      "category": "Philosophy",
-      "isbn": 9999999999,
-      "createdAt": "12 March 2022, 8:35AM",
-      "editedAt": "13 March 2022, 1:48PM",
-      "status": true,
-      "imgSrc": "riko"
-    },
-    {
-      "id": 0.3747471046283968,
-      "status": true,
-      "title": "sdf",
-      "author": "sdf",
-      "category": "Mystery/Thriller",
+      "title": "itanic (National Archives)",
+      "author": "Tom Bradman",
+      "category": "Romance",
       "ISBN": "1111111111",
-      "createdAt": "Fri May 19 2023 16:16:06 GMT+0300 (Eastern European Summer Time)",
-      "editedAt": "Fri May 19 2023 16:16:06 GMT+0300 (Eastern European Summer Time)",
-      "imgSrc": "sdf"
+      "createdAt": "May 19, 2023, 5:27 PM",
+      "editedAt": "May 19, 2023, 5:27 PM",
+      "imgSrc": "https://www.bookovka.ua/3751006-large_default/titanic-national-archives.jpg"
     },
     {
-      "id": 0.950182882771615,
+      "id": 0.8049177764523892,
       "status": true,
-      "title": "romeo",
-      "author": "romejoo",
-      "category": "Travel",
-      "ISBN": "1111111111",
-      "createdAt": "Fri May 19 2023 16:16:41 GMT+0300 (Eastern European Summer Time)",
-      "editedAt": "Fri May 19 2023 16:16:41 GMT+0300 (Eastern European Summer Time)",
-      "imgSrc": "romeo"
-    },
-    {
-      "id": 0.6267796035306332,
-      "status": true,
-      "title": "1",
-      "author": "1",
+      "title": "444gdfgdf",
+      "author": "2sf",
       "category": "Fiction",
       "ISBN": "1111111111",
-      "createdAt": "Fri May 19 2023 16:19:31 GMT+0300 (Eastern European Summer Time)",
-      "editedAt": "Fri May 19 2023 16:19:31 GMT+0300 (Eastern European Summer Time)",
-      "imgSrc": "1"
+      "createdAt": "May 19, 2023, 5:27 PM",
+      "editedAt": "May 19, 2023, 5:27 PM",
+      "imgSrc": "2sfad"
     }
   ]
 }

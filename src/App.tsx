@@ -22,7 +22,7 @@ function App() {
         <Route path="/" element={<Dashboard />} />
         <Route path="/home" element={<Navigate to="/" replace />} />
         <Route path="/add-book" element={<AddBook />} />
-        <Route path="/add-editor/:id" element={<BookEditor />} />
+        <Route path="/edit-book/:id" element={<BookEditor />} />
         <Route path="/books/:id" element={<BookDetails />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>

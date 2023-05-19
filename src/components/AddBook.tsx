@@ -3,18 +3,19 @@ import categories from '../utils/categories';
 import { Book } from '../types/Book';
 import { useNavigate } from 'react-router-dom';
 import { addBook } from '../api/api';
+import formatDateTime from '../utils/formatDateTime';
 
 const AddBook = () => {
   const [book, setBook] = useState<Book>({
     id: Math.random(),
     status: true,
-    title: '',//
-    author: '',//
+    title: '', //
+    author: '', //
     category: '',
-    ISBN: undefined,//
-    createdAt: new Date().toString(),
-    editedAt: new Date().toString(),
-    imgSrc: ''//
+    ISBN: undefined, //
+    createdAt: formatDateTime(new Date()),
+    editedAt: formatDateTime(new Date()),
+    imgSrc: '' //
   });
   const navigate = useNavigate();
  
@@ -37,7 +38,7 @@ const AddBook = () => {
     navigate('/'); console.log(book, 'book submited');
     addBook(book);
   };
-  
+
   return (
     <section>
       <form onSubmit={(e) => handleSubmit(e)} className="add-form">

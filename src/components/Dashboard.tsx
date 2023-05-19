@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { fetchBooks, deleteBookById } from '../api/api';
 import { Book } from '../types/Book';
@@ -120,11 +121,13 @@ const Dashboard = () => {
                       className="table__buttons-edit table__button"
                       value={book.status ? 'active' : 'inactive'}
                     />
-                    <input
-                      type="button"
+                    <Link
+                      to={`/edit-book/${book.id}`}
                       className="table__buttons-edit table__button"
-                      value="Edit"
-                    />
+                    >
+                      Edit
+                    </Link>
+
                     <input
                       type="button"
                       className="table__buttons-delete table__button"
