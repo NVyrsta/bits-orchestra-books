@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { fetchBooks, deleteBookById } from '../api/api';
 import { Book } from '../types/Book';
+import { editBook } from '../api/api';
 
 const Dashboard = () => {
   const [books, setBooks] = useState<Book[]>([]);
@@ -10,7 +11,6 @@ const Dashboard = () => {
   const loadBooks = async () => {
     const response = await fetchBooks();
     setBooks(response);
-    console.log(response);
   };
 
   const onDeleteBook = async (id: number) => {
@@ -20,7 +20,7 @@ const Dashboard = () => {
     } catch (error) {
       console.error('Failed to delete book:', error);
     }
-  }
+  };
 
   useEffect(() => {
     loadBooks();
@@ -31,6 +31,15 @@ const Dashboard = () => {
   const handleImageError = (event: React.SyntheticEvent<HTMLImageElement>) => {
     event.currentTarget.src =
       'https://www.queerscifi.com/wp-content/uploads/2016/05/untitled2-600x541.jpg';
+  };
+
+  const onToggleStatus = (book: Book) => {
+    const status = !book.status;
+    editBook(`${book.id}`, {
+      ...book,
+      status
+    });
+    loadBooks();
   };
 
   return (
@@ -116,11 +125,12 @@ const Dashboard = () => {
                 <td>{book.ISBN}</td>
                 <td>
                   <div className="table__buttons">
-                    <input
-                      type="button"
+                    <button
                       className="table__buttons-edit table__button"
-                      value={book.status ? 'active' : 'inactive'}
-                    />
+                      onClick={() => onToggleStatus(book)}
+                    >
+                      {book.status ? 'active' : 'inactive'}
+                    </button>
                     <Link
                       to={`/edit-book/${book.id}`}
                       className="table__buttons-edit table__button"

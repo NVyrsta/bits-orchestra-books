@@ -1,26 +1,15 @@
 {
   "books": [
     {
-      "id": 0.3388641189231141,
-      "status": true,
-      "title": "itanic (National Archives)",
-      "author": "Tom Bradman",
-      "category": "Romance",
-      "ISBN": "1111111111",
-      "createdAt": "May 19, 2023, 5:27 PM",
-      "editedAt": "May 19, 2023, 5:27 PM",
-      "imgSrc": "https://www.bookovka.ua/3751006-large_default/titanic-national-archives.jpg"
-    },
-    {
       "id": 0.8049177764523892,
-      "status": true,
+      "status": false,
       "title": "444gdfgdf",
       "author": "2sf",
       "category": "Fiction",
       "ISBN": "1111111111",
       "createdAt": "May 19, 2023, 5:27 PM",
       "editedAt": "May 19, 2023, 5:27 PM",
-      "imgSrc": "2sfad"
+      "imgSrc": "2sfaddg"
     }
   ]
 }
