@@ -1,5 +1,6 @@
 {
   "name": "bits-orchestra-books",
+  "author": "Nataliia Vyrsta",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
