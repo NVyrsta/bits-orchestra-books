@@ -1,46 +1,42 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Setup
 
-## Available Scripts
+To get started with this project, follow the steps below:
 
-In the project directory, you can run:
+1. Fork the repository and clone it to your local machine.
+2. Navigate to the project directory and run the following command to install the dependencies:
+   ```
+   npm install
+   ```
+3. Once the dependencies are installed, you can start the development server by running the command:
 
-### `npm start`
+To run the project with the `npm run start-dev` command, you need to install the `concurrently` package globally. Follow the steps below to install it:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3.1 Open your terminal or command prompt.
+3.2 Run the following command to install `concurrently` globally:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```
+npm install -g concurrently
+```
 
-### `npm test`
+After installing `concurrently` globally, you can run the project using the `npm run start-dev` command. This command will concurrently start the development server and any other necessary scripts.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Note: If you encounter any permission issues while installing the package globally, you may need to use `sudo` or run the command prompt as an administrator.
 
-### `npm run build`
+```
+npm run start-dev
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This will launch the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will automatically reload if you make any edits, and you will see any lint errors in the console.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Project Details
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project implements CRUD functionality using React, TypeScript (ts), SCSS, and React Hooks. It provides the following features:
 
-### `npm run eject`
+- Create: You can add new books by filling in the title, image URL, author, category, and ISBN fields in the form.
+- Read: The app displays a list of books showing their titles, authors, categories, and other details.
+- Update: You can edit the existing book details by clicking on the edit button for a specific book.
+- Delete: You can remove a book from the list by clicking on the delete button for a specific book.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The project utilizes React Hooks for managing state and side effects in a functional component-based approach. TypeScript is used for type-checking and providing static types to the code. SCSS is used for styling the components, providing a visually appealing user interface.

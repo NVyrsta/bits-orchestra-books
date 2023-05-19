@@ -9,13 +9,13 @@ const AddBook = () => {
   const [book, setBook] = useState<Book>({
     id: Math.random(),
     status: true,
-    title: '', //
-    author: '', //
+    title: '',
+    author: '',
     category: '',
-    ISBN: undefined, //
+    ISBN: undefined,
     createdAt: formatDateTime(new Date()),
     editedAt: formatDateTime(new Date()),
-    imgSrc: '' //
+    imgSrc: ''
   });
   const navigate = useNavigate();
  
@@ -40,7 +40,7 @@ const AddBook = () => {
   };
 
   return (
-    <section>
+    <section >
       <form onSubmit={(e) => handleSubmit(e)} className="add-form">
         <div className="add-form__content">
           <div className="add-form__header">
@@ -97,16 +97,12 @@ const AddBook = () => {
             <input
               type="text"
               className="add-form__field-input"
-              // value={isbn || 0}
               maxLength={10}
               minLength={10}
               name="ISBN"
               onChange={(e) => onInputChange(e)}
               required
             />
-            {/* {isNumber && (
-                <span style={{ color: 'red' }}>enter an ISBN(10 digits)</span>
-              )} */}
           </div>
         </div>
         <input type="submit" className="add-form__submit" value="ADD BOOK" />

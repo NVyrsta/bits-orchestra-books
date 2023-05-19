@@ -8,7 +8,7 @@
       "category": "Technology",
       "ISBN": "9780713679",
       "createdAt": "May 19, 2023, 6:58 PM",
-      "editedAt": "May 19, 2023, 7:01 PM",
+      "editedAt": "May 19, 2023, 7:43 PM",
       "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/d06/e4o10qrn5789oea277etrtgx54hhiygh/317_448_174b5ed2089e1946312e2a80dcd26f146/kniga_check_your_english_vocabulary_for_computers_and_information_technology.jpg"
     },
     {
@@ -30,8 +30,19 @@
       "category": "Non-fiction",
       "ISBN": "1111111111",
       "createdAt": "May 19, 2023, 7:05 PM",
-      "editedAt": "May 19, 2023, 7:05 PM",
-      "imgSrc": ""
+      "editedAt": "May 19, 2023, 7:23 PM",
+      "imgSrc": "d"
+    },
+    {
+      "id": 0.3478947456667436,
+      "status": true,
+      "title": "dsf",
+      "author": "sdf",
+      "category": "Art/Photography",
+      "ISBN": "1111111111",
+      "createdAt": "May 19, 2023, 7:42 PM",
+      "editedAt": "May 19, 2023, 7:42 PM",
+      "imgSrc": "sdf"
     }
   ]
 }

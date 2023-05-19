@@ -48,7 +48,7 @@ const BookEditor = () => {
     if (id) {
     const updatedBook = {
       ...book,
-      editedAt: formatDateTime(new Date()) // Update the editedAt field
+      editedAt: formatDateTime(new Date())
     };
     editBook(id, updatedBook);    }
     navigate('/');
@@ -88,7 +88,6 @@ const BookEditor = () => {
               name="imgSrc"
               value={imgSrc}
               onChange={(e) => onInputChange(e)}
-              required
             />
           </div>
           <div className="add-form__author add-form__field">
@@ -124,7 +123,6 @@ const BookEditor = () => {
             <input
               type="text"
               className="add-form__field-input"
-              // value={isbn || 0}
               maxLength={10}
               minLength={10}
               name="ISBN"
@@ -132,9 +130,6 @@ const BookEditor = () => {
               onChange={(e) => onInputChange(e)}
               required
             />
-            {/* {isNumber && (
-                <span style={{ color: 'red' }}>enter an ISBN(10 digits)</span>
-              )} */}
           </div>
         </div>
         <input
