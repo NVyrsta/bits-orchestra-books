@@ -1,15 +1,37 @@
 {
   "books": [
     {
-      "id": 0.8049177764523892,
+      "id": 0.27114388562234226,
+      "status": true,
+      "title": "Check Your English Vocabulary for Computers and Information Technology",
+      "author": "Jon Marks",
+      "category": "Technology",
+      "ISBN": "9780713679",
+      "createdAt": "May 19, 2023, 6:58 PM",
+      "editedAt": "May 19, 2023, 7:01 PM",
+      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/d06/e4o10qrn5789oea277etrtgx54hhiygh/317_448_174b5ed2089e1946312e2a80dcd26f146/kniga_check_your_english_vocabulary_for_computers_and_information_technology.jpg"
+    },
+    {
+      "id": 0.4230131525770049,
       "status": false,
-      "title": "444gdfgdf",
+      "title": "The Long Take",
+      "author": "Robin Robertson ",
+      "category": "Romance",
+      "ISBN": "9781509886",
+      "createdAt": "May 19, 2023, 7:00 PM",
+      "editedAt": "May 19, 2023, 7:01 PM",
+      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/3eb/3idf5e4u31typ75d6hp44bk8qumzc2w2/296_448_174b5ed2089e1946312e2a80dcd26f146/kniga_the_long_take.jpg"
+    },
+    {
+      "id": 0.5948090752009283,
+      "status": true,
+      "title": "tret",
       "author": "2sf",
-      "category": "Fiction",
+      "category": "Non-fiction",
       "ISBN": "1111111111",
-      "createdAt": "May 19, 2023, 5:27 PM",
-      "editedAt": "May 19, 2023, 5:27 PM",
-      "imgSrc": "2sfaddg"
+      "createdAt": "May 19, 2023, 7:05 PM",
+      "editedAt": "May 19, 2023, 7:05 PM",
+      "imgSrc": ""
     }
   ]
 }

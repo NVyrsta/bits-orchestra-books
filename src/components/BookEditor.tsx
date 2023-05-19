@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import categories from '../utils/categories';
 import { Book } from '../types/Book';
 import { useNavigate, useParams } from 'react-router-dom';
-import { addBook } from '../api/api';
 import { fetchBookById, editBook } from '../api/api';
 import formatDateTime from '../utils/formatDateTime';
 
@@ -10,13 +9,13 @@ const BookEditor = () => {
   const [book, setBook] = useState<Book>({
     id: Math.random(),
     status: true,
-    title: '', //
-    author: '', //
+    title: '',
+    author: '',
     category: '',
-    ISBN: undefined, //
+    ISBN: undefined,
     createdAt: formatDateTime(new Date()),
     editedAt: formatDateTime(new Date()),
-    imgSrc: '' //
+    imgSrc: ''
   });
 
   const { title, author, category, ISBN, imgSrc } = book;
@@ -33,24 +32,25 @@ const BookEditor = () => {
   const onInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setBook({
       ...book,
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   };
 
   const onInputSelect = (event: React.ChangeEvent<HTMLSelectElement>) => {
     setBook({
       ...book,
-      [event.target.name]: event.target.value
+      [event.target.name]: event.target.value,
     });
   };
-
-
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     if (id) {
-      editBook(id, book);
-    }
+    const updatedBook = {
+      ...book,
+      editedAt: formatDateTime(new Date()) // Update the editedAt field
+    };
+    editBook(id, updatedBook);    }
     navigate('/');
     console.log(book, 'book submited');
   };

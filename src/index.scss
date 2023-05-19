@@ -1,5 +1,8 @@
+@import './styles/variables/colors.scss';
+
 body {
-  font-family: "Liberation Mono","Courier New", monospace;
+  font-family: 'Liberation Mono', 'Courier New', monospace;
+  background-color: $light;
 }
 
 #root {
@@ -18,6 +21,5 @@ body {
 }
 
 .container {
-    width: 100%;
-
+  width: 100%;
 }

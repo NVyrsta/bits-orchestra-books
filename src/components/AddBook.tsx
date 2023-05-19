@@ -64,7 +64,6 @@ const AddBook = () => {
               className="add-form__field-input"
               name="imgSrc"
               onChange={(e) => onInputChange(e)}
-              required
             />
           </div>
           <div className="add-form__author add-form__field">

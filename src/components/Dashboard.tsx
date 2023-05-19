@@ -1,12 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useMediaQuery } from 'react-responsive';
 import { fetchBooks, deleteBookById } from '../api/api';
 import { Book } from '../types/Book';
 import { editBook } from '../api/api';
+import formatDateTime from '../utils/formatDateTime';
 
 const Dashboard = () => {
   const [books, setBooks] = useState<Book[]>([]);
+  const [sortOption, setSortOption] = useState<string>('all');
+
 
   const loadBooks = async () => {
     const response = await fetchBooks();
@@ -22,9 +25,23 @@ const Dashboard = () => {
     }
   };
 
+  const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
+    setSortOption(event.target.value);
+  };
+
   useEffect(() => {
     loadBooks();
   }, []);
+
+  const sortedBooks = useMemo(() => {
+    let sorted = [...books];
+    if (sortOption === 'active') {
+      sorted = sorted.filter((book) => book.status);
+    } else if (sortOption === 'inactive') {
+      sorted = sorted.filter((book) => !book.status);
+    }
+    return sorted;
+  }, [books, sortOption]);
 
   const isMobile = useMediaQuery({ maxWidth: 991 });
 
@@ -37,7 +54,8 @@ const Dashboard = () => {
     const status = !book.status;
     editBook(`${book.id}`, {
       ...book,
-      status
+      status,
+      editedAt: formatDateTime(new Date())
     });
     loadBooks();
   };
@@ -45,7 +63,7 @@ const Dashboard = () => {
   return (
     <section className="dashboard container">
       <div className="sort-menu">
-        <select id="sort-select">
+        <select id="sort-select" onChange={handleSortChange}>
           <option value="all">Show All</option>
           <option value="active">Show Active</option>
           <option value="inactive">Show Inactive</option>
@@ -59,8 +77,8 @@ const Dashboard = () => {
               <img
                 src={book.imgSrc}
                 alt="img"
-                width={200}
-                height={200}
+                width={300}
+                height={300}
                 onError={handleImageError}
               />
               <div>
@@ -72,16 +90,24 @@ const Dashboard = () => {
                 <p>Category: {book.category}</p>
                 <p>ISBN: {book.ISBN}</p>
                 <div className="card__buttons">
+                  <button
+                    className="table__buttons-edit table__button"
+                    onClick={() => onToggleStatus(book)}
+                  >
+                    {book.status ? 'active' : 'inactive'}
+                  </button>
+                  <Link
+                    to={`/edit-book/${book.id}`}
+                    className="table__buttons-edit table__button"
+                  >
+                    Edit
+                  </Link>
+
                   <input
                     type="button"
-                    className="card__button"
-                    value={book.status ? 'Active' : 'Inactive'}
-                  />
-                  <input type="button" className="card__button" value="Edit" />
-                  <input
-                    type="button"
-                    className="card__button"
+                    className="table__buttons-delete table__button"
                     value="Delete"
+                    onClick={() => onDeleteBook(book.id)}
                   />
                 </div>
               </div>
@@ -105,14 +131,14 @@ const Dashboard = () => {
           </thead>
 
           <tbody>
-            {books.map((book) => (
+            {sortedBooks.map((book) => (
               <tr key={book.id}>
                 <td>
                   <img
                     src={book.imgSrc}
                     alt="img"
-                    width={200}
-                    height={200}
+                    width={100}
+                    height={100}
                     onError={handleImageError}
                   />
                 </td>

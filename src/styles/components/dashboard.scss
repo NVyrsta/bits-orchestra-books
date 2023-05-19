@@ -3,85 +3,58 @@
 
 .dashboard {
   padding: 40px 20px;
-  background-color: $light;
 
   @include onTablet {
     padding: 40px 50px;
   }
-
-  & tr {
-    border: 1px solid green;
-  }
 }
 
 .table {
-  margin-top: 30px;
+  border-collapse: collapse;
+  text-align: left;
+  width: 100%;
+  @include onMobile {
+    font-size: 12px;
+  }
+
+  &__button {
+    cursor: pointer;
+    border: none;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: 300ms;
+  }
 
   &__buttons {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    justify-content: space-between;
     gap: 10px;
-  }
+    grid-template-columns: 1fr;
 
-  &__buttons input {
-    display: inline-block;
-  }
-  th {
-    padding: 20px 0;
-    background-color: green;
-  }
+    @include onMobile {
+      display: flex;
+      flex-direction: column;
+    }
 
-  tbody {
-    tr {
-      td {
-        padding: 20px;
-        border-bottom: 4px solid green;
-        &:first-child {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
+    &-edit {
+      &:hover {
+        background-color: #f5ff6d;
       }
     }
-  }
 
-  @media (max-width: 768px) {
-    thead {
-      display: none;
-    }
-
-    tbody {
-      display: block;
-
-      tr {
-        border: none;
-        margin-bottom: 10px;
-
-        td {
-          display: block;
-          // border: 1px solid black;
-          margin-bottom: 5px;
-          padding: 5px;
-        }
+    &-delete {
+      &:hover {
+        background-color: #ff6d6d;
       }
     }
   }
 }
 
-.card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+td, th {
+  padding: 20px 0;
+  width: 10%;
+  border-bottom: 2px solid green;
   text-align: center;
-  // border: 1px solid black;
-  border-radius: 4px;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.card__image {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  margin-bottom: 10px;
 }
