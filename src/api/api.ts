@@ -1,4 +1,4 @@
-// import { Book } from '../types/Book';
+import { Book } from '../types/Book';
 
 const API_URL = 'http://localhost:3001/books';
 
@@ -26,5 +26,22 @@ export async function deleteBookById(id: number) {
     });
   } catch (error) {
     console.error(`Error deleting book with ID ${id}:`, error);
+  }
+}
+
+export async function addBook(bookData: Book) {
+  try {
+    const response = await fetch(API_URL, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(bookData)
+    });
+    const newBook = await response.json();
+    return newBook;
+  } catch (error) {
+    console.error('Error creating book:', error);
+    throw error;
   }
 }

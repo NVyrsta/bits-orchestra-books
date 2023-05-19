@@ -76,6 +76,39 @@
       "editedAt": "13 March 2022, 1:48PM",
       "status": true,
       "imgSrc": "riko"
+    },
+    {
+      "id": 0.3747471046283968,
+      "status": true,
+      "title": "sdf",
+      "author": "sdf",
+      "category": "Mystery/Thriller",
+      "ISBN": "1111111111",
+      "createdAt": "Fri May 19 2023 16:16:06 GMT+0300 (Eastern European Summer Time)",
+      "editedAt": "Fri May 19 2023 16:16:06 GMT+0300 (Eastern European Summer Time)",
+      "imgSrc": "sdf"
+    },
+    {
+      "id": 0.950182882771615,
+      "status": true,
+      "title": "romeo",
+      "author": "romejoo",
+      "category": "Travel",
+      "ISBN": "1111111111",
+      "createdAt": "Fri May 19 2023 16:16:41 GMT+0300 (Eastern European Summer Time)",
+      "editedAt": "Fri May 19 2023 16:16:41 GMT+0300 (Eastern European Summer Time)",
+      "imgSrc": "romeo"
+    },
+    {
+      "id": 0.6267796035306332,
+      "status": true,
+      "title": "1",
+      "author": "1",
+      "category": "Fiction",
+      "ISBN": "1111111111",
+      "createdAt": "Fri May 19 2023 16:19:31 GMT+0300 (Eastern European Summer Time)",
+      "editedAt": "Fri May 19 2023 16:19:31 GMT+0300 (Eastern European Summer Time)",
+      "imgSrc": "1"
     }
   ]
 }
