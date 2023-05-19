@@ -1,0 +1,48 @@
+@import '../variables/colors.scss';
+@import '../mixins/media.scss';
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $primary-dark;
+  height: 48px;
+
+  @include onTablet {
+    height: 72px;
+  }
+
+  &__navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    height: 100%;
+
+    @include onTablet {
+      padding: 10px 50px;
+    }
+  }
+
+  &__logo {
+    display: inline-block;
+    height: 100%;
+  }
+
+  &__logo svg {
+    fill: $green;
+    height: 100%;
+    width: 50px;
+  }
+
+  &__add-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $green;
+    border: 2px solid $green;
+    padding: 4px 16px;
+    font-size: 18px;
+    border-radius: 0 20px 20px 20px;
+  }
+}

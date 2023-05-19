@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate
+} from 'react-router-dom';
+import './App.scss';
+import Header from './components/Header';
+import Dashboard from './components/Dashboard';
+import AddBook from './components/AddBook';
+import BookDetails from './components/BookDetails';
+import Footer from './components/Footer';
+import BookEditor from './components/BookEditor';
+import PageNotFound from './components/PageNotFound';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+        <Route path="/home" element={<Navigate to="/" replace />} />
+        <Route path="/add-book" element={<AddBook />} />
+        <Route path="/add-editor/:id" element={<BookEditor />} />
+        <Route path="/books/:id" element={<BookDetails />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+
+      <Footer />
+    </Router>
   );
 }
 

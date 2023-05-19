@@ -1,0 +1,92 @@
+{
+  "books": [
+    {
+      "id": 1,
+      "title": "titanic",
+      "author": "ervin",
+      "category": "Young Adult",
+      "isbn": 1111111111,
+      "createdAt": "Editt",
+      "editedAt": "Editt",
+      "status": true,
+      "imgSrc": "gdfg"
+    },
+    {
+      "id": 2,
+      "title": "222",
+      "author": "2222",
+      "category": "Art/Photography",
+      "isbn": 2222222222,
+      "createdAt": "Editt",
+      "editedAt": "Editt",
+      "status": true,
+      "imgSrc": "https://.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg"
+    },
+    {
+      "id": 3,
+      "title": "The Politics Book",
+      "author": "Dorling Kindersley",
+      "category": "Politics",
+      "isbn": 9781409364450,
+      "createdAt": "12 March 2022, 8:35AM",
+      "editedAt": "13 March 2022, 1:48PM",
+      "status": true,
+      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg"
+    },
+    {
+      "id": 4,
+      "title": "The Politics Book",
+      "author": "Dorling Kindersley",
+      "category": "Politics",
+      "isbn": 9781409364450,
+      "createdAt": "12 March 2022, 8:35AM",
+      "editedAt": "13 March 2022, 1:48PM",
+      "status": true,
+      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg"
+    },
+    {
+      "id": 5,
+      "title": "The Politics Book",
+      "author": "Dorling Kindersley",
+      "category": "Politics",
+      "isbn": 9781409364450,
+      "createdAt": "12 March 2022, 8:35AM",
+      "editedAt": "13 March 2022, 1:48PM",
+      "status": true,
+      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg"
+    },
+    {
+      "id": 6,
+      "title": "The Politics Book",
+      "author": "Dorling Kindersley",
+      "category": "Politics",
+      "isbn": 9781409364450,
+      "createdAt": "12 March 2022, 8:35AM",
+      "editedAt": "13 March 2022, 1:48PM",
+      "status": true,
+      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg"
+    },
+    {
+      "id": 7,
+      "title": "mailo",
+      "author": "js author",
+      "category": "Sports",
+      "isbn": 1010101010,
+      "createdAt": "12 March 2022, 8:35AM",
+      "editedAt": "13 March 2022, 1:48PM",
+      "status": true,
+      "imgSrc": "https://images.prom.ua/2440373205_w640_h640_javascript-the-definitive.jpg"
+    },
+    {
+      "id": 8,
+      "title": "riko",
+      "author": "riko",
+      "category": "Philosophy",
+      "isbn": 9999999999,
+      "createdAt": "12 March 2022, 8:35AM",
+      "editedAt": "13 March 2022, 1:48PM",
+      "status": true,
+      "imgSrc": "riko"
+    }
+  ]
+}
