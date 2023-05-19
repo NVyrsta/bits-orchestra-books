@@ -1,9 +1,13 @@
-import React from 'react';
+import { VscGithub } from 'react-icons/vsc';
 
 const Footer = () => {
   return (
-    <div className='footer'>Footer</div>
-  )
+    <section className="footer container">
+      <a href="https://github.com/NVyrsta" target="_blank">
+        <VscGithub /> Nataliia Vyrsta
+      </a>
+    </section>
+  );
 };
 
 export default Footer;

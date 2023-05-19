@@ -1,0 +1,17 @@
+@import '../variables/colors.scss';
+
+.footer {
+    background-color: $primary-dark;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $primary-light;
+  font-size: 19px;
+  padding: 10px 20px;
+
+  @include onTablet {
+    height: 72px;
+    padding: 10px 50px;
+  }
+}

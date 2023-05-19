@@ -1,124 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
-
-const books = [
-  {
-    id: 1,
-    title: 'titanic',
-    author: 'ervin',
-    category: 'Young Adult',
-    ISBN: 1111111111,
-    createdAt: 'Editt',
-    editedAt: 'Editt',
-    status: true,
-    imgSrc: 'gdfg'
-  },
-  {
-    id: 2,
-    title: '222',
-    author: '2222',
-    category: 'Art/Photography',
-    ISBN: 2222222222,
-    createdAt: 'Editt',
-    editedAt: 'Editt',
-    status: true,
-    imgSrc:
-      'https://.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg'
-  },
-  {
-    id: 3,
-    title: 'The Politics Book',
-    author: 'Dorling Kindersley',
-    category: 'Politics',
-    ISBN: 9781409364450,
-    createdAt: '12 March 2022, 8:35AM',
-    editedAt: '13 March 2022, 1:48PM',
-    status: true,
-    imgSrc:
-      'https://www.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg'
-  },
-  {
-    id: 4,
-    title: 'The Politics Book',
-    author: 'Dorling Kindersley',
-    category: 'Politics',
-    ISBN: 9781409364450,
-    createdAt: '12 March 2022, 8:35AM',
-    editedAt: '13 March 2022, 1:48PM',
-    status: true,
-    imgSrc:
-      'https://www.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg'
-  },
-  {
-    id: 5,
-    title: 'The Politics Book',
-    author: 'Dorling Kindersley',
-    category: 'Politics',
-    ISBN: 9781409364450,
-    createdAt: '12 March 2022, 8:35AM',
-    editedAt: '13 March 2022, 1:48PM',
-    status: true,
-    imgSrc:
-      'https://www.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg'
-  },
-  {
-    id: 6,
-    title: 'The Politics Book',
-    author: 'Dorling Kindersley',
-    category: 'Politics',
-    ISBN: 9781409364450,
-    createdAt: '12 March 2022, 8:35AM',
-    editedAt: '13 March 2022, 1:48PM',
-    status: true,
-    imgSrc:
-      'https://www.britishbook.ua/upload/resize_cache/iblock/d8f/o0ucrm5mnec2heg1le8shqbotu08nl5j/800_800_174b5ed2089e1946312e2a80dcd26f146/kniga_the_politics_book.jpg'
-  },
-  {
-    id: 7,
-    title: 'mailo',
-    author: 'js author',
-    category: 'Sports',
-    ISBN: 1010101010,
-    createdAt: '12 March 2022, 8:35AM',
-    editedAt: '13 March 2022, 1:48PM',
-    status: true,
-    imgSrc:
-      'https://images.prom.ua/2440373205_w640_h640_javascript-the-definitive.jpg'
-  },
-  {
-    id: 8,
-    title: 'riko',
-    author: 'riko',
-    category: 'Philosophy',
-    ISBN: 9999999999,
-    createdAt: '12 March 2022, 8:35AM',
-    editedAt: '13 March 2022, 1:48PM',
-    status: true,
-    imgSrc: 'riko'
-  }
-];
+import { fetchBooks } from '../api/api';
+import { Book } from '../types/Book';
 
 const Dashboard = () => {
+  const [books, setBooks] = useState<Book[]>([]);
+
+  const loadBooks = async () => {
+    const response = await fetchBooks();
+    setBooks(response);
+    console.log(response);
+  };
+
+  useEffect(() => {
+    loadBooks();
+  }, []);
+
   const isMobile = useMediaQuery({ maxWidth: 991 });
 
-      const handleImageError = (
-        event: React.SyntheticEvent<HTMLImageElement>
-      ) => {
-        event.currentTarget.src =
-          'https://book-ye.com.ua/upload/resize_cache/iblock/2c8/520_860_1/8968836d_1d2d_11ed_8173_0050568ef5e6_c1205b0a_1d2f_11ed_8173_0050568ef5e6.jpg';
-      };
+  const handleImageError = (event: React.SyntheticEvent<HTMLImageElement>) => {
+    event.currentTarget.src =
+      'https://www.queerscifi.com/wp-content/uploads/2016/05/untitled2-600x541.jpg';
+  };
+
   return (
     <section className="dashboard container">
-        <div className="sort-menu">
-          <select
-            id="sort-select"
-          >
-            <option value="all">Show All</option>
-            <option value="active">Show Active</option>
-            <option value="inactive">Show Inactive</option>
-          </select>
+      <div className="sort-menu">
+        <select id="sort-select">
+          <option value="all">Show All</option>
+          <option value="active">Show Active</option>
+          <option value="inactive">Show Inactive</option>
+        </select>
       </div>
-      
+
       {isMobile ? (
         <div className="card-list">
           {books.map((book) => (
@@ -144,11 +58,7 @@ const Dashboard = () => {
                     className="card__button"
                     value={book.status ? 'Active' : 'Inactive'}
                   />
-                  <input
-                    type="button"
-                    className="card__button"
-                    value="Edit"
-                  />
+                  <input type="button" className="card__button" value="Edit" />
                   <input
                     type="button"
                     className="card__button"

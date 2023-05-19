@@ -1,7 +1,9 @@
 @import '../mixins/media.scss';
+@import '../variables/colors.scss';
 
 .dashboard {
   padding: 40px 20px;
+  background-color: $light;
 
   @include onTablet {
     padding: 40px 50px;
@@ -32,8 +34,8 @@
   tbody {
     tr {
       td {
-        padding: 10px;
-        margin-bottom: 20px;
+        padding: 20px;
+        border-bottom: 4px solid green;
         &:first-child {
           display: flex;
           flex-direction: column;
