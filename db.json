@@ -2,13 +2,13 @@
   "books": [
     {
       "id": 0.3454353593491408,
-      "status": true,
+      "status": false,
       "title": "The Long Take",
       "author": "Robin Robertson",
       "category": "Drama/Plays",
       "ISBN": "9781509886",
       "createdAt": "May 20, 2023, 12:53 AM",
-      "editedAt": "May 21, 2023, 8:45 PM",
+      "editedAt": "May 21, 2023, 9:00 PM",
       "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/3eb/3idf5e4u31typ75d6hp44bk8qumzc2w2/296_448_174b5ed2089e1946312e2a80dcd26f146/kniga_the_long_take.jpg"
     },
     {
@@ -24,13 +24,13 @@
     },
     {
       "id": 0.46203056785332786,
-      "status": false,
+      "status": true,
       "title": "Skills for the TOEFL iBT Test: Reading and Writing with Online Audio",
       "author": "Collins",
-      "category": "Education",
+      "category": "Psychology",
       "ISBN": "9780007460",
       "createdAt": "May 20, 2023, 12:57 AM",
-      "editedAt": "May 21, 2023, 8:46 PM",
+      "editedAt": "May 21, 2023, 9:03 PM",
       "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/750/zrm7r6fvult3rhzl4a5dw6rgwj9lm7xt/298_386_174b5ed2089e1946312e2a80dcd26f146/kniga_skills_for_the_toefl_ibt_test_reading_and_writing_with_online_audio.jpg"
     },
     {
@@ -65,6 +65,17 @@
       "createdAt": "May 21, 2023, 8:33 PM",
       "editedAt": "May 21, 2023, 8:33 PM",
       "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/dfa/b5vqs3odvj28nmrdikvhkyzo855jc8xr/459_707_174b5ed2089e1946312e2a80dcd26f146/kniga_start_with_why_how_great_leaders_inspire_everyone_to_take_action.png"
+    },
+    {
+      "id": 0.7684633835714272,
+      "status": true,
+      "title": "Watching the English: The Hidden Rules of English Behaviour",
+      "author": "Kate Fox",
+      "category": "Travel",
+      "ISBN": "9781444785",
+      "createdAt": "May 21, 2023, 9:01 PM",
+      "editedAt": "May 21, 2023, 9:02 PM",
+      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/08c/i0v56pledz1f2emg8jnegezltshbkyg4/292_448_174b5ed2089e1946312e2a80dcd26f146/kniga_watching_the_english_the_hidden_rules_of_english_behaviour.jpg"
     }
   ]
 }

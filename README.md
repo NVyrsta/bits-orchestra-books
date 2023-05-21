@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+Project demo video: https://reccloud.com/u/0im0kv2
+
 ## Project Setup
 
 To get started with this project, follow the steps below:
