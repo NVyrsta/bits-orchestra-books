@@ -68,6 +68,7 @@ export async function editBook(id: string, bookData: Book) {
     });
     const updatedBook = await response.json();
     Notification('Book updated successfully', 'success');
+
     return updatedBook;
   } catch (error) {
     Notification('Error updating book', 'reject');

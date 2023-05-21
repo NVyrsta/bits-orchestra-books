@@ -1,17 +1,18 @@
 @import '../variables/colors.scss';
+@import '../mixins/layout.scss';
 
 .footer {
-    background-color: $primary-dark;
+  @include flex-center;
+  padding: 10px 20px;
   height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  background-color: $primary-dark;
+
   color: $primary-light;
   font-size: 19px;
-  padding: 10px 20px;
 
   @include onTablet {
-    height: 72px;
     padding: 10px 50px;
+    height: 72px;
   }
 }

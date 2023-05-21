@@ -1,0 +1,87 @@
+@import '../mixins/media.scss';
+@import '../mixins/layout.scss';
+@import '../variables/colors.scss';
+
+.table {
+  text-align: left;
+  width: 100%;
+  border-collapse: collapse;
+
+  @include onMobile {
+    font-size: 12px;
+  }
+
+  &__button {
+    @include flex-center;
+    font-weight: 600;
+
+    cursor: pointer;
+    height: 30px;
+    width: 120px;
+
+    border: none;
+    border-radius: 5px;
+    background-color: $primary-light;
+    color: $primary-dark;
+    border-radius: 0 20px 20px 20px;
+
+    font-family: 'Liberation Mono', 'Courier New', monospace;
+    font-size: 16px;
+
+    transition: all 0.3 ease-in-out;
+  }
+
+  &__buttons {
+    @include grid-between;
+    gap: 10px;
+    grid-template-columns: 1fr;
+
+    @include onMobile {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-status {
+      &:hover {
+        background-color: $yellow;
+      }
+    }
+
+    &-edit {
+      &:hover {
+        background-color: $green;
+      }
+    }
+
+    &-delete {
+      &:hover {
+        background-color: $pink;
+      }
+    }
+  }
+
+  &__row--active {
+    color: $primary-dark;
+
+    font-weight: 600;
+  }
+
+  &__row--inactive {
+    color: $inactive;
+
+    font-weight: 400;
+  }
+
+  td,
+  th {
+    padding: 20px 0;
+    width: 10%;
+    border-bottom: 2px solid $green;
+
+    text-align: center;
+  }
+
+  thead {
+    background-color: $green;
+  }
+}

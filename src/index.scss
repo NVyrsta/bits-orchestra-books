@@ -1,10 +1,12 @@
 @import './styles/variables/colors.scss';
 
 body {
-  font-family: 'Liberation Mono', 'Courier New', monospace;
-  background-color: $light;
   max-width: 1440px;
   margin: 0 auto;
+
+  background-color: $light;
+
+  font-family: 'Liberation Mono', 'Courier New', monospace;
 }
 
 #root {
@@ -16,7 +18,6 @@ body {
 }
 
 .footer {
-  background-color: red;
   margin-top: auto;
   height: 50px;
   width: 100%;
@@ -27,8 +28,10 @@ body {
 }
 
 .go-home-link {
-  font-size: 32px;
   color: $green;
+
+  font-size: 32px;
+  
   transition: color 0.3s ease-in-out;
 
   &:hover {

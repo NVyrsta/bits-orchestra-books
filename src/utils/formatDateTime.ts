@@ -1,4 +1,4 @@
-export default function (date: Date){
+export default function (date: Date) {
   const formattedDate = date.toLocaleDateString('en-US', {
     day: 'numeric',
     month: 'long',
@@ -10,4 +10,4 @@ export default function (date: Date){
     hour12: true
   });
   return `${formattedDate}, ${formattedTime}`;
-};
+}

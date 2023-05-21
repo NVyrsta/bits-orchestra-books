@@ -1,4 +1,5 @@
 @import '../mixins/media.scss';
+@import '../mixins/layout.scss';
 @import '../variables/colors.scss';
 
 .dashboard {
@@ -7,14 +8,6 @@
   @include onTablet {
     padding: 40px 50px;
   }
-}
-
-td,
-th {
-  padding: 20px 0;
-  width: 10%;
-  border-bottom: 2px solid $green;
-  text-align: center;
 }
 
 .sort-menu {
@@ -28,149 +21,5 @@ th {
   &__count {
     margin-left: 20px;
     font-weight: 600;
-  }
-}
-
-.card-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-
-  @include onTablet {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-.table__row--active {
-  color: $primary-dark;
-  font-weight: 600;
-}
-
-.table__row--inactive {
-  color: $inactive;
-  font-weight: 400;
-}
-
-thead {
-  background-color: $green;
-}
-
-.card {
-  text-align: left;
-  border: 1px solid $green;
-  padding: 10px;
-
-  &__img {
-    display: inline-block;
-    margin: 20px auto;
-    text-align: center;
-    height: 300px;
-  }
-
-  &__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $primary-dark;
-    font-weight: bold;
-    cursor: pointer;
-    border: none;
-    height: 30px;
-    border-radius: 5px;
-    transition: 300ms;
-    padding: 10px 20px;
-    width: 100px;
-    background-color: $primary-light;
-    color: $primary-dark;
-    font-weight: 600;
-    font-size: 16px;
-    font-family: 'Liberation Mono', 'Courier New', monospace;
-  }
-
-  &__buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-
-    @include onMobile {
-      display: flex;
-      flex-direction: column;
-    }
-
-    &-edit {
-      &:hover {
-        background-color: #f5ff6d;
-      }
-    }
-
-    &-delete {
-      &:hover {
-        background-color: #ff6d6d;
-      }
-    }
-  }
-
-  & p span {
-    color: $green;
-  }
-}
-.card__buttons {
-  display: flex;
-  gap: 10px;
-  flex-direction: row;
-}
-
-.table {
-  border-collapse: collapse;
-  text-align: left;
-  width: 100%;
-  @include onMobile {
-    font-size: 12px;
-  }
-
-  &__button {
-    font-weight: 600;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    height: 30px;
-    border-radius: 5px;
-    transition: 300ms;
-    width: 120px;
-    background-color: $primary-light;
-    color: $primary-dark;
-    font-family: 'Liberation Mono', 'Courier New', monospace;
-    font-size: 16px;
-  }
-
-  &__buttons {
-    display: grid;
-    justify-content: space-between;
-    gap: 10px;
-    grid-template-columns: 1fr;
-
-    @include onMobile {
-      display: flex;
-      flex-direction: column;
-    }
-
-    &-edit {
-      &:hover {
-        background-color: #f5ff6d;
-      }
-    }
-
-    &-delete {
-      &:hover {
-        background-color: #ff6d6d;
-      }
-    }
   }
 }

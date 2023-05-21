@@ -3,11 +3,13 @@
     @content;
   }
 }
+
 @mixin onTablet {
   @media screen and (min-width: 768px) {
     @content;
   }
 }
+
 @mixin onDesktop {
   @media screen and (min-width: 992px) {
     @content;

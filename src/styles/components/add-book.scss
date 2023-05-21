@@ -1,76 +1,6 @@
 @import '../mixins/media.scss';
-
-.add-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  & div {
-  display: block;
-}
-}
-
-.add-form__content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-      width: 100%;
-
-  
-  @include onTablet {
-    width: 80%;
-
-  }
-}
-
-.add-form__header {
-  display: flex;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.add-form__header-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-right: 10px;
-}
-
-.add-form__field {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.add-form__field-input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.add-form__category-select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
-
-.add-form__submit {
-  padding: 10px 20px;
-  background-color: #f44336;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.add-form__submit:hover {
-  background-color: #d32f2f;
-}
+@import '../variables/colors.scss';
+@import '../mixins/layout.scss';
 
 .add-book {
   width: 100%;
@@ -81,3 +11,74 @@
   }
 }
 
+.add-form {
+  @include flex-center;
+  flex-direction: column;
+
+  &__content {
+    @include flex-center;
+    flex-direction: column;
+    width: 100%;
+
+    @include onTablet {
+      width: 80%;
+    }
+  }
+
+  & div {
+    display: block;
+  }
+
+  &__header {
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-size: 24px;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    font-size: 16px;
+  }
+
+  &__field-input {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid $inactive;
+    border-radius: 4px;
+
+    font-size: 16px;
+  }
+
+  &__category-select {
+    width: 100%;
+    padding: 10px;
+
+    border: 1px solid $inactive;
+    border-radius: 4px;
+
+    font-size: 16px;
+  }
+
+  &__submit {
+    padding: 10px 20px;
+
+    background-color: $pink;
+    color: $white;
+    border: none;
+    border-radius: 4px;
+
+    font-size: 16px;
+
+    cursor: pointer;
+  }
+
+  &__submit:hover {
+    background-color: $pink;
+  }
+}

@@ -18,6 +18,7 @@ const AddBook = () => {
     editedAt: formatDateTime(new Date()),
     imgSrc: ''
   });
+
   const navigate = useNavigate();
 
   const onInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -37,7 +38,6 @@ const AddBook = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     navigate('/');
-    console.log(book, 'book submited');
     addBook(book);
   };
 
@@ -46,10 +46,8 @@ const AddBook = () => {
       <GoHomeLink />
       <form onSubmit={(e) => handleSubmit(e)} className="add-form">
         <div className="add-form__content">
-          <div className="add-form__header">
-            <h2 className="add-form__header-title">ADD BOOK</h2>
-            <div className="add-form__header-close"></div>
-          </div>
+          <h2 className="add-form__title">ADD BOOK</h2>
+
           <div className="add-form__title add-form__field">
             Title
             <input
@@ -60,6 +58,7 @@ const AddBook = () => {
               required
             />
           </div>
+
           <div className="add-form__title add-form__field">
             IMG
             <input
@@ -69,6 +68,7 @@ const AddBook = () => {
               onChange={(e) => onInputChange(e)}
             />
           </div>
+
           <div className="add-form__author add-form__field">
             Author
             <input
@@ -79,10 +79,11 @@ const AddBook = () => {
               required
             />
           </div>
+          
           <div className="add-form__category add-form__field">
             Category
             <select
-              className="add-form__category-select add-form__field-input"
+              className="add-form__field-input add-form__category-select"
               name="category"
               onChange={onInputSelect}
               required
@@ -95,6 +96,7 @@ const AddBook = () => {
               ))}
             </select>
           </div>
+
           <div className="add-form__isbn add-form__field">
             ISBN
             <input
@@ -108,7 +110,8 @@ const AddBook = () => {
             />
           </div>
         </div>
-        <input type="submit" className="add-form__submit" value="ADD BOOK" />
+
+        <button className="add-form__submit">ADD BOOK</button>
       </form>
     </section>
   );

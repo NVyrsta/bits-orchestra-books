@@ -1,0 +1,96 @@
+@import '../mixins/media.scss';
+@import '../mixins/layout.scss';
+@import '../variables/colors.scss';
+
+.card-list {
+  @include grid-center;
+  grid-template-columns: 1fr;
+  gap: 20px;
+
+  @include onTablet {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.card {
+  padding: 30px 20px;
+
+  border-radius: 0 20px 20px 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+
+  text-align: left;
+
+  &__img {
+    display: block;
+    margin: 20px auto;
+    height: 300px;
+
+    border-radius: 20px;
+  }
+
+  &__button {
+    @include flex-center;
+    height: 30px;
+    padding: 10px 20px;
+    width: 120px;
+
+    background-color: $primary-light;
+    color: $primary-dark;
+    border: none;
+    border-radius: 0 20px 20px 20px;
+
+    font-weight: 600;
+    font-size: 16px;
+    font-family: 'Liberation Mono', 'Courier New', monospace;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+
+    @include onMobile {
+      display: flex;
+    }
+
+    &-status {
+      &:hover {
+        background-color: $yellow;
+      }
+    }
+
+    &-edit {
+      &:hover {
+        background-color: $green;
+      }
+    }
+
+    &-delete {
+      &:hover {
+        background-color: $pink;
+      }
+    }
+  }
+
+  & p span {
+    color: $green;
+  }
+
+  &__content--active {
+    color: $primary-dark;
+
+    font-weight: 600;
+  }
+
+  &__content--inactive {
+    color: $inactive;
+
+    font-weight: 400;
+  }
+}

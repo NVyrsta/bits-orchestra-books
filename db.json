@@ -8,29 +8,29 @@
       "category": "Drama/Plays",
       "ISBN": "9781509886",
       "createdAt": "May 20, 2023, 12:53 AM",
-      "editedAt": "May 20, 2023, 1:06 AM",
+      "editedAt": "May 21, 2023, 8:45 PM",
       "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/3eb/3idf5e4u31typ75d6hp44bk8qumzc2w2/296_448_174b5ed2089e1946312e2a80dcd26f146/kniga_the_long_take.jpg"
     },
     {
       "id": 0.8138181871832721,
-      "status": false,
+      "status": true,
       "title": "JavaScript in Easy Steps",
       "author": "Mike McGrath",
       "category": "Technology",
       "ISBN": "9781840785",
       "createdAt": "May 20, 2023, 12:55 AM",
-      "editedAt": "May 20, 2023, 1:07 AM",
+      "editedAt": "May 21, 2023, 7:51 PM",
       "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/7b7/zmo5pybsps2g0e5uwv8w9062y1w5kvyn/336_410_174b5ed2089e1946312e2a80dcd26f146/kniga_javascript_in_easy_steps.jpg"
     },
     {
       "id": 0.46203056785332786,
-      "status": true,
+      "status": false,
       "title": "Skills for the TOEFL iBT Test: Reading and Writing with Online Audio",
       "author": "Collins",
       "category": "Education",
       "ISBN": "9780007460",
       "createdAt": "May 20, 2023, 12:57 AM",
-      "editedAt": "May 20, 2023, 12:57 AM",
+      "editedAt": "May 21, 2023, 8:46 PM",
       "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/750/zrm7r6fvult3rhzl4a5dw6rgwj9lm7xt/298_386_174b5ed2089e1946312e2a80dcd26f146/kniga_skills_for_the_toefl_ibt_test_reading_and_writing_with_online_audio.jpg"
     },
     {
@@ -52,8 +52,19 @@
       "category": "Cookbooks",
       "ISBN": "9780241251",
       "createdAt": "May 20, 2023, 1:03 AM",
-      "editedAt": "May 20, 2023, 1:03 AM",
+      "editedAt": "May 21, 2023, 8:23 PM",
       "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/11e/w2s0d86lxgalkqitkcwj6ro0sithtkrf/293_448_174b5ed2089e1946312e2a80dcd26f146/kniga_the_book_you_wish_your_parents_had_read_and_your_children_will_be_glad_that_you_did.jpg"
+    },
+    {
+      "id": 0.6296901964399091,
+      "status": true,
+      "title": "Start with Why: How Great Leaders Inspire Everyone to Take Action",
+      "author": " Simon Sinek",
+      "category": "Self-help/Personal Development",
+      "ISBN": "9780241958",
+      "createdAt": "May 21, 2023, 8:33 PM",
+      "editedAt": "May 21, 2023, 8:33 PM",
+      "imgSrc": "https://www.britishbook.ua/upload/resize_cache/iblock/dfa/b5vqs3odvj28nmrdikvhkyzo855jc8xr/459_707_174b5ed2089e1946312e2a80dcd26f146/kniga_start_with_why_how_great_leaders_inspire_everyone_to_take_action.png"
     }
   ]
 }

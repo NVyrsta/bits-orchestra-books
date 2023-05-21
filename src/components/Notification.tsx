@@ -11,9 +11,11 @@ const Notification = (message: string, type: string) => {
     case 'success':
       toast.success(message, toastOptions);
       break;
+    
     case 'reject':
       toast.error(message, toastOptions);
       break;
+    
     default:
       toast(message, toastOptions);
   }

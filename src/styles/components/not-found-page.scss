@@ -1,12 +1,16 @@
+@import '../variables/colors.scss';
+
 .not-found-page {
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
+  padding: 50px;
+
   background-image: url(../../assets/img/not-found-page.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
-  padding: 50px;
+
+  color: $white;
 }

@@ -26,7 +26,6 @@ const BookEditor = () => {
 
   const loadBookData = async (id: number) => {
     const response = await fetchBookById(id);
-    console.log('loadBookData resp', response);
     setBook(response);
   };
 
@@ -54,7 +53,6 @@ const BookEditor = () => {
       editBook(id, updatedBook);
     }
     navigate('/');
-    console.log(book, 'book submited');
   };
 
   useEffect(() => {
@@ -68,10 +66,8 @@ const BookEditor = () => {
       <GoHomeLink />
       <form onSubmit={(e) => handleSubmit(e)} className="add-form">
         <div className="add-form__content">
-          <div className="add-form__header">
-            <h2 className="add-form__header-title">Edit</h2>
-            <div className="add-form__header-close"></div>
-          </div>
+          <h2 className="add-form__title">ADD BOOK</h2>
+
           <div className="add-form__title add-form__field">
             Title
             <input
@@ -83,6 +79,7 @@ const BookEditor = () => {
               required
             />
           </div>
+
           <div className="add-form__title add-form__field">
             IMG
             <input
@@ -93,6 +90,7 @@ const BookEditor = () => {
               onChange={(e) => onInputChange(e)}
             />
           </div>
+
           <div className="add-form__author add-form__field">
             Author
             <input
@@ -104,10 +102,11 @@ const BookEditor = () => {
               required
             />
           </div>
+
           <div className="add-form__category add-form__field">
             Category
             <select
-              className="add-form__category-select add-form__field-input"
+              className="add-form__field-input add-form__category-select"
               name="category"
               value={category}
               onChange={onInputSelect}
@@ -121,6 +120,7 @@ const BookEditor = () => {
               ))}
             </select>
           </div>
+
           <div className="add-form__isbn add-form__field">
             ISBN
             <input
@@ -135,11 +135,8 @@ const BookEditor = () => {
             />
           </div>
         </div>
-        <input
-          type="submit"
-          className="add-form__submit"
-          value="Save changes"
-        />
+
+        <button className="add-form__submit">SAVE CHANGES</button>
       </form>
     </section>
   );
